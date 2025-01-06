@@ -29,8 +29,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title:
-      "The tech stack behind my creations-a mix of brilliance, caffeine. ☕",
+    title: "The tech stack behind my creations-a mix of brilliance, caffeine.",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",

@@ -34,7 +34,7 @@ const Hero = () => {
       >
         {/* Radial gradient for the container to give a faded look */}
         <div
-          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
+          // change the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
@@ -57,27 +57,27 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! ,i am a Frontend Developer based in India.
+            Hi! ,I am a Frontend Developer based in India.
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Know More"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
 
-          {/* Add the Download CV Button */}
+          {/* MagicButton for Download CV */}
           <a
-            href="
-            ../public/SwastideepMaharana.pdf
-            " // Replace with the actual path to your CV file
+            href="/SwastideepMaharana.pdf" // Correct path to the CV file in the public folder
             download
-            className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
-            <span className="mr-2">Download CV</span>
-            <FaLocationArrow />
+            <MagicButton
+              title="Download CV"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
           </a>
         </div>
       </div>
