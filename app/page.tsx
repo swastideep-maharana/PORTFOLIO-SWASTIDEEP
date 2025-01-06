@@ -1,5 +1,3 @@
-"use client"; // This makes the component client-side rendered
-
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
