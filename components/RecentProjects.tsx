@@ -15,6 +15,12 @@ const RecentProjects = () => {
     return null; // Avoid rendering server-side mismatch
   }
 
+  // Function to handle the card click
+  const handleCardClick = (url: string) => {
+    window.open(url, "_blank"); // Open the link in a new tab
+    console.log(`Redirecting to ${url}`); // You can log or track the click here
+  };
+
   return (
     <div className="py-20 bg-gradient-to-r from-indigo-900/60 to-purple-900/60">
       <h1 className="text-center text-3xl font-extrabold text-white">
@@ -26,8 +32,8 @@ const RecentProjects = () => {
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] group cursor-pointer transform hover:scale-105 transition-all duration-300"
             key={item.id}
+            onClick={() => handleCardClick(item.link)} // Add onClick here
           >
-            {/* Remove the wrapping <a> tag and put href only on PinContainer */}
             <PinContainer title={item.link} href={item.link}>
               <div className="relative sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh] mb-10 overflow-hidden group-hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] group-hover:border-2 group-hover:border-pink-500 transition-all ease-in-out duration-300">
                 <div
