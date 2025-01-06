@@ -1,5 +1,4 @@
-"use client"; // This makes sure this component runs client-side
-
+import { useEffect, useState } from "react"; // Import necessary hooks
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
@@ -7,21 +6,20 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { useEffect, useState } from "react";
 
 const Home = () => {
   const [isClient, setIsClient] = useState(false);
 
-  // Ensure any client-side code runs inside useEffect
+  // Use useEffect to make sure this runs only on the client-side
   useEffect(() => {
-    setIsClient(true); // This ensures the component only renders on the client
+    setIsClient(true);
   }, []);
 
+  // Only render the content after the component has mounted on the client
   if (!isClient) {
-    return null; // Optionally, you can return a loading state here
+    return null; // Prevent SSR errors
   }
 
   return (
