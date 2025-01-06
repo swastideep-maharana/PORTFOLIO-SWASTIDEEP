@@ -10,17 +10,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full pt-20 pb-10 relative" id="contact">
+    <footer className="w-full  pb-10  mb-[100px]" id="contact">
       {/* Background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50"
-        />
-      </div>
 
-      <div className="flex flex-col items-center relative z-10">
+      <div className="flex flex-col items-center  z-10">
         <h1 className="heading lg:max-w-[45vw]">
           Reach out to <span className="text-purple">me</span> today and let's
           discuss how I can help you achieve your goals.
