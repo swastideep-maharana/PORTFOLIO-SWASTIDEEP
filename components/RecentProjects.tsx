@@ -8,7 +8,7 @@ const RecentProjects = () => {
 
   // Ensures the component is rendered only on the client-side
   useEffect(() => {
-    setIsClient(true);
+    setIsClient(true); // Set isClient to true after component mounts
   }, []);
 
   if (!isClient) {
