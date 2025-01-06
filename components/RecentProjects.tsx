@@ -17,8 +17,10 @@ const RecentProjects = () => {
 
   // Function to handle the card click
   const handleCardClick = (url: string) => {
-    window.open(url, "_blank"); // Open the link in a new tab
-    console.log(`Redirecting to ${url}`); // You can log or track the click here
+    if (typeof window !== "undefined") {
+      window.open(url, "_blank"); // Open the link in a new tab
+      console.log(`Redirecting to ${url}`); // You can log or track the click here
+    }
   };
 
   return (
