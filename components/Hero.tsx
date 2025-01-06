@@ -67,6 +67,18 @@ const Hero = () => {
               position="right"
             />
           </a>
+
+          {/* Add the Download CV Button */}
+          <a
+            href="
+            ../public/SwastideepMaharana.pdf
+            " // Replace with the actual path to your CV file
+            download
+            className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            <span className="mr-2">Download CV</span>
+            <FaLocationArrow />
+          </a>
         </div>
       </div>
     </div>
