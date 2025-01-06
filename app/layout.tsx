@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image"; // Import next/image for optimization
 import logoimage from "../public/logo.png"; // Importing the logo image
 
 import "./globals.css";
@@ -32,7 +33,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href={logoimage.src} // Use logoimage.src to get the URL
+          href={logoimage.src} // Using the correct imported path
           sizes="any"
           type="image/png"
         />

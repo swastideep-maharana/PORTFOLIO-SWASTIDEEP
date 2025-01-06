@@ -1,3 +1,5 @@
+"use client"; // This makes sure this component runs client-side
+
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
@@ -8,16 +10,19 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isClient, setIsClient] = useState(false);
+
   // Ensure any client-side code runs inside useEffect
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Client-side only logic here
-      // You can interact with the DOM or window if needed
-    }
+    setIsClient(true); // This ensures the component only renders on the client
   }, []);
+
+  if (!isClient) {
+    return null; // Optionally, you can return a loading state here
+  }
 
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
