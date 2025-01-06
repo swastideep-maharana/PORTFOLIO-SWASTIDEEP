@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react"; // Import necessary hooks
+"use client"; // Add this line to mark the component as a Client Component
+
+import { useEffect, useState } from "react";
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
@@ -12,14 +14,12 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Home = () => {
   const [isClient, setIsClient] = useState(false);
 
-  // Use useEffect to make sure this runs only on the client-side
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  // Only render the content after the component has mounted on the client
   if (!isClient) {
-    return null; // Prevent SSR errors
+    return null;
   }
 
   return (
@@ -30,7 +30,6 @@ const Home = () => {
         <Grid />
         <RecentProjects />
         <Clients />
-        {/* <Experience /> */}
         <Approach />
         <Footer />
       </div>
