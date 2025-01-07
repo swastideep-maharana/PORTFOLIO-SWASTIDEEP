@@ -1,12 +1,11 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaLocationArrow, FaArrowDown } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-16 relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -40,11 +39,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-10 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            {/* Dynamic Web Magic with Next.js */}
-          </p>
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 mb-4"></p>
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -53,31 +50,48 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Swastideep Maharana"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl glow-text"
+            className="text-center text-[30px] sm:text-[40px] md:text-5xl lg:text-6xl glow-text animate-pulse"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! ,I am a Frontend Developer based in India.
+          <p className="text-center md:tracking-wider mb-6 text-sm md:text-lg lg:text-2xl">
+            Hi there! I am a passionate Frontend Developer based in India,
+            crafting dynamic web experiences.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Know More"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#about">
+              <MagicButton
+                title="Know More"
+                icon={<FaLocationArrow />}
+                position="right"
+                otherClasses="hover:bg-blue-500 transition-all duration-300 ease-in-out"
+              />
+            </a>
 
-          {/* MagicButton for Download CV */}
-          <a
-            href="/SwastideepMaharana.pdf" // Correct path to the CV file in the public folder
-            download
-          >
-            <MagicButton
-              title="Download CV"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            {/* MagicButton for Download CV */}
+            <a
+              href="/SwastideepMaharana.pdf" // Correct path to the CV file in the public folder
+              download
+            >
+              <MagicButton
+                title="Download CV"
+                icon={<FaLocationArrow />}
+                position="right"
+                otherClasses="hover:bg-green-500 transition-all duration-300 ease-in-out"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/** Scroll down prompt with new down arrow icon */}
+      <div className="absolute bottom-10 left-0 right-0 text-center">
+        <p className="text-sm md:text-lg text-blue-100 animate-pulse">
+          Scroll Down to See More
+        </p>
+        <div className="flex justify-center mt-2 animate-bounce">
+          <a href="#about">
+            <FaArrowDown className="text-3xl text-white" />
           </a>
         </div>
       </div>

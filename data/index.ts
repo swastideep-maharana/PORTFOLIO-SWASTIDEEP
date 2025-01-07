@@ -74,7 +74,7 @@ export const projects = [
   {
     id: 1,
     title: "Tomato(food-ordering-delivery)",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    des: "The Food Delivery (Tomato) Web Application is a full-stack solution designed to provide users with a seamless and efficient way to order food online. The project consists of two main repositories: …",
     img: "/tomato.png",
     iconLists: [
       "/re.svg",
@@ -91,7 +91,7 @@ export const projects = [
   {
     id: 2,
     title: "BinkeyIt(E-commerce Platform)",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    des: "The Binkeyit Ecommerce website is a feature-rich online shopping platform designed for a seamless user experience. Built with a modern tech stack including React, MongoDB, Express, and Tailwind CSS…",
     img: "/binkeyit.png",
     iconLists: [
       "/re.svg",
@@ -107,7 +107,7 @@ export const projects = [
   {
     id: 3,
     title: "FinaceSmart(AI powered Finance Management App)",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    des: "The Expense Tracker is a web application designed to help users manage and track their personal finances effectively.",
     img: "/financesmart.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongo.png", "/c.svg"],
     link: "https://expense-ai-tracker.vercel.app",
@@ -115,7 +115,7 @@ export const projects = [
   {
     id: 4,
     title: "ChatterBox(RealtimeChat App)",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Allows users to communicate in individual or group chats, offering instant message delivery, user authentication, and a modern, responsive interface. Built with React.js for the frontend an…",
     img: "/chatterbox.png",
     iconLists: [
       "/re.svg",
@@ -131,7 +131,7 @@ export const projects = [
   {
     id: 5,
     title: "Gemini 2.0(Ai assistant)",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "The Gemini2.0 website is a a seamless Ai assistant platform. Built with a modern tech stack including React, MongoDB, Express, and Tailwind CSS…",
     img: "/gemini.png",
     iconLists: [
       "/re.svg",
@@ -147,7 +147,7 @@ export const projects = [
   {
     id: 6,
     title: "RespawinGalaxy",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Respawning Galaxy is a sleek and interactive website that showcases the dynamic world of gaming. With a visually appealing interface, the site provides visitors with an immersive experience, featur…",
     img: "/respawing.png",
     iconLists: ["/re.svg", "/tail.svg", "/js.png", "/html.png", "/css.png"],
     link: "https://respawingalaxy.netlify.app",

@@ -10,11 +10,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full  pb-10  mb-[100px]" id="contact">
+    <footer className="w-full pb-10 mb-[100px]" id="contact">
       {/* Background grid */}
 
-      <div className="flex flex-col items-center  z-10">
-        <h1 className="heading lg:max-w-[45vw]">
+      <div className="flex flex-col items-center z-10">
+        <h1 className="heading text-center lg:max-w-[45vw] text-xl md:text-3xl">
           Reach out to <span className="text-purple">me</span> today and let's
           discuss how I can help you achieve your goals.
         </h1>
@@ -31,12 +31,12 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center relative z-10">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-16 relative z-10">
+        <p className="md:text-base text-sm font-light text-center md:text-left">
           Copyright © 2025 Swastideep Maharana
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 mt-4 md:mt-0">
           {socialMedia.map((info) => (
             <div
               key={info.id}
