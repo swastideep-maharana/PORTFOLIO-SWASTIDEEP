@@ -103,14 +103,14 @@ export const projects = [
     ],
     link: "https://binkeyit-ecommercee.vercel.app",
   },
-  // {
-  //   id: 3,
-  //   title: "FinaceSmart(AI powered Finance Management App)",
-  //   des: "The Expense Tracker is a web application designed to help users manage and track their personal finances effectively.",
-  //   img: "/financesmart.png",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongo.png", "/c.svg"],
-  //   link: "https://expense-ai-tracker.vercel.app",
-  // },
+  {
+    id: 3,
+    title: "BuildIX(full-stack web apps using Ai) ",
+    des: "The BuildIX website is a platform that allows users to build full-stack web applications using Artificial Intelligence (AI) as a backend. Built with a modern tech stack including React…",
+    img: "/buildix.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongo.png", "/c.svg"],
+    link: "https://buildix.netlify.app",
+  },
   {
     id: 4,
     title: "ChatterBox(RealtimeChat App)",
